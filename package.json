@@ -3,14 +3,23 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "npm run start:prod",
+    "start:dev:react": "cd ./client && npm i && npm start && cd ..",
+    "start:dev:node": "npm i && node ./bin/www",
+    "start:prod": "npm run start:prod:react && npm run start:prod:node",
+    "start:prod:react": "cd ./client && npm i && npm run build && cd ..",
+    "start:prod:node": "npm i && node ./bin/www"
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "hbs": "~4.0.4",
     "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "reactstrap": "^8.1.1"
   }
 }
