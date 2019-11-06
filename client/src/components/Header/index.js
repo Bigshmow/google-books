@@ -11,44 +11,25 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
+  import '../../Style/Style.css'
 
   const Header = (props) => {
-    const [isOpen, setIsOpen] = useState(false);
-  
-    const toggle = () => setIsOpen(!isOpen);
-  
+
     return (
       <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
-          <NavbarToggler onClick={toggle} />
-          <Collapse isOpen={isOpen} navbar>
+        <Navbar color="primary" dark expand="md">
+          <NavbarBrand href="/">GoogleBooks</NavbarBrand>
+          <NavLink href="/components/" className="socialMedia">Search</NavLink> |
+          <NavLink href="/components/" className="socialMedia">Saved</NavLink>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
+              <h1 className="socialMedia">
+                <a alt="linkedin" href="https://www.linkedin.com/in/devin-stewart-7697bb9b/" className="fa fa-linkedin"></a> 
+                  |
+                <a alt="github" href="https://github.com/Bigshmow/google-books" className="fa fa-github"></a>
+              </h1>
               </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-              </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
             </Nav>
-          </Collapse>
         </Navbar>
       </div>
     );
