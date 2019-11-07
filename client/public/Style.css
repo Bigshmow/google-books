@@ -1,0 +1,16 @@
+a {
+    color: white;
+}
+
+.fa-github , .fa-linkedin {
+    color: black;
+}
+
+.fa-github:hover , .fa-linkedin:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.socialMedia {
+    color: white;
+}

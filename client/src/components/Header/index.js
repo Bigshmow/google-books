@@ -1,16 +1,11 @@
-import React, { useState } from 'react';
+// eslint-disable-next-line
+import React from 'react';
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  NavLink} from 'reactstrap';
   import '../../Style/Style.css'
 
   const Header = (props) => {
