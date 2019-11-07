@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Mainjumb from './components/Jumbotron';
 import Searchcard from './components/Search';
 import Results from './components/Results';
+import Books from './components/Books';
 
 function App() {
   return (
@@ -12,7 +13,11 @@ function App() {
       <Mainjumb />
       <Searchcard />
 
-      <Results />
+      <Results>
+      <Books />
+      <Books />
+      <Books />
+      </Results>
     </div>
   );
 }
