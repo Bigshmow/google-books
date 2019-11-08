@@ -1,24 +1,25 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import { noMatch } from './pages/noMatch';
 import Header from './components/Header';
 import Mainjumb from './components/Jumbotron';
-import Searchcard from './components/Search';
-import Results from './components/Results';
-import Books from './components/Books';
+import { Search } from './pages/Search';
+import { Saved } from './pages/Saved';
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <Header />
       <Mainjumb />
-      <Searchcard />
-
-      <Results>
-      <Books />
-      <Books />
-      <Books />
-      </Results>
+      <Switch>
+    <Route exact path="/" component={Search} />
+    <Route exact path="/saved" component={Saved} />
+    <Route component={noMatch} />
+      </Switch>
     </div>
+    </Router>
   );
 }
 

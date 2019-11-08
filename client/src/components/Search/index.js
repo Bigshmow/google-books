@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button, CardHeader, CardFooter, CardBody, CardText, InputGroup, InputGroupAddon, Input } from 'reactstrap';
+import { Card, Button, CardHeader, CardBody, CardText, InputGroup, InputGroupAddon, Input } from 'reactstrap';
 
 const Searchcard = (props) => {
   return (

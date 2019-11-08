@@ -7,6 +7,7 @@
 var app = require('../app');
 var debug = require('debug')('google-books:server');
 var http = require('http');
+const mongoose = require("mongoose");
 
 /**
  * Get port from environment and store in Express.
@@ -20,6 +21,9 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
+
+// connect to mongoDB
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks");
 
 /**
  * Listen on provided port, on all network interfaces.
