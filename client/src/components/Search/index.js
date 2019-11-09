@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardHeader, CardBody, CardText, InputGroup, InputGroupAddon, Input } from 'reactstrap';
+import { Card, CardHeader, CardBody, CardText, InputGroup} from 'reactstrap';
 
 export class Searchcard extends Component {
   
@@ -12,10 +12,7 @@ export class Searchcard extends Component {
         <CardBody>
           <CardText>Search for a book you'd like to know more about!</CardText>
           <InputGroup>
-          <Input />
-          <InputGroupAddon addonType="append">
             {this.props.children}
-        </InputGroupAddon>
         </InputGroup>
         </CardBody>
       </Card>

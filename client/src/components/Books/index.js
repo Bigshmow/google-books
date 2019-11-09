@@ -18,7 +18,7 @@ export class Books extends Component {
         </CardHeader>
         <CardBody>
           <CardText className="text-left h5">Written by: {this.props.author}</CardText>
-          <span><span className="float-left"><CardImg top width="100%" src="#" alt="Book Image" /></span><p className="text-left">{this.props.description}</p></span>
+          <span><span className="float-left"><CardImg top width="100%" src={this.props.image} alt="Book Image" /></span><p className="text-left">{this.props.description}</p></span>
           </CardBody>
       </Card>
       </div>
