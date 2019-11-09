@@ -1,7 +1,10 @@
-import React from 'react';
-import { Card, Button, CardHeader, CardBody, CardText, InputGroup, InputGroupAddon, Input } from 'reactstrap';
+import React, { Component } from 'react';
+import { Card, CardHeader, CardBody, CardText, InputGroup, InputGroupAddon, Input } from 'reactstrap';
 
-const Searchcard = (props) => {
+export class Searchcard extends Component {
+  
+  render(props) {
+
   return (
     <div>
       <Card>
@@ -11,7 +14,7 @@ const Searchcard = (props) => {
           <InputGroup>
           <Input />
           <InputGroupAddon addonType="append">
-          <Button color="success">Search!</Button>
+            {this.props.children}
         </InputGroupAddon>
         </InputGroup>
         </CardBody>
@@ -19,5 +22,4 @@ const Searchcard = (props) => {
     </div>
   );
 };
-
-export default Searchcard;
+}
