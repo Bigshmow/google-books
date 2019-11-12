@@ -13,8 +13,8 @@ import {
       <div>
         <Navbar color="primary" dark expand="md">
           <NavbarBrand href="/">GoogleBooks</NavbarBrand>
-          <NavLink href="/" className="socialMedia">Search</NavLink> |
-          <NavLink href="/saved" className="socialMedia">Saved</NavLink>
+          <NavLink href="/google-books" className="socialMedia">Search</NavLink> |
+          <NavLink href="/google-books/saved" className="socialMedia">Saved</NavLink>
             <Nav className="ml-auto" navbar>
               <NavItem>
               <h1 className="socialMedia">
