@@ -14,8 +14,8 @@ function App() {
       <Header />
       <Mainjumb />
       <Switch>
-    <Route exact path="/" component={Search} />
-    <Route exact path="/saved" component={Saved} />
+    <Route exact path="/google-books" component={Search} />
+    <Route exact path="/google-books/saved" component={Saved} />
     <Route component={noMatch} />
       </Switch>
     </div>
