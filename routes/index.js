@@ -10,7 +10,7 @@ router.get('/api/health', function (req, res, next) {
 });
 
 // GET home page.
-router.get('/', function(req, res, next) {
+router.get('/google-books', function(req, res, next) {
   res.sendFile(path.join(__dirname, "client/build/index.html"));
 });
 
